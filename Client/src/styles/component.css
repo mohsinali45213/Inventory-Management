@@ -1,0 +1,140 @@
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-light);
+  transition: color 0.2s;
+}
+.theme-toggle-btn:hover {
+  color: var(--primary-light);
+}
+
+.btn, .alert, .input, .toast {
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.alert {
+  background: var(--primary-light);
+  color: var(--secondary);
+  box-shadow: var(--shadow);
+}
+
+.input {
+  background: var(--secondary-light);
+  color: var(--secondary);
+  border: 1px solid var(--primary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.input:focus {
+  border-color: var(--primary-dark);
+  outline: none;
+}
+
+.toast {
+  background: var(--primary);
+  color: var(--secondary-light);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* Futuristic Card Style */
+.futuristic-card {
+  background: var(--glass-bg);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-glass);
+  border: 1.5px solid var(--glass-border);
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Futuristic Table */
+.futuristic-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--glass-bg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-glass);
+  overflow: hidden;
+}
+.futuristic-table th, .futuristic-table td {
+  padding: 1em;
+  color: #fff;
+  background: transparent;
+}
+.futuristic-table th {
+  background: rgba(56,189,248,0.12);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.futuristic-table tr:nth-child(even) td {
+  background: rgba(30,64,175,0.10);
+}
+.futuristic-table tr:hover td {
+  background: rgba(103,232,249,0.10);
+  transition: background 0.18s;
+}
+
+/* Futuristic Modal */
+.futuristic-modal {
+  background: var(--glass-bg);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-glass);
+  border: 1.5px solid var(--glass-border);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+
+/* Futuristic Button */
+.futuristic-btn {
+  background: var(--futuristic-gradient-alt);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-neon);
+  font-weight: 600;
+  padding: 0.7em 1.6em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.18s, background 0.18s;
+}
+.futuristic-btn:hover, .futuristic-btn:focus {
+  box-shadow: 0 0 16px 4px var(--neon-cyan), 0 2px 24px 0 rgba(30,64,175,0.22);
+  background: var(--futuristic-gradient);
+}
+
+/* Futuristic Input */
+.futuristic-input {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1.5px solid var(--neon-blue);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1.1rem;
+  font-size: 1rem;
+  transition: border 0.18s, box-shadow 0.18s;
+}
+.futuristic-input:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 8px 2px var(--neon-cyan);
+  outline: none;
+}
+
+/* Futuristic Alert */
+.futuristic-alert {
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  color: #fff;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-neon);
+  padding: 1em 1.5em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
